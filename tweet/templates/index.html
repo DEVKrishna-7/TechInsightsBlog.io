@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Welcome - BlogHQ
+{% endblock %}
+
+{% block content %}
+    <div class="py-5 text-center">
+        <h1 class="display-5 fw-bold">Welcome to BlogHQ</h1>
+        <p class="lead text-muted">A simple tweet-style app for sharing updates with your community.</p>
+        <div class="d-flex justify-content-center gap-2 mt-4">
+            <a class="btn btn-primary btn-lg" href="{% url 'tweet_list' %}">View Tweets</a>
+            <a class="btn btn-outline-secondary btn-lg" href="{% url 'tweet_create' %}">Create Tweet</a>
+        </div>
+    </div>
+{% endblock %}
